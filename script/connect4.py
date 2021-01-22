@@ -15,12 +15,6 @@ def printer(board):
     print(s)
     print()
 
-class NoRoomError(Exception):
-    pass
-
-class OutofBoundsError(Exception):
-    pass
-
 class Connect4:
     def __init__(self):
         """Initializes the game.
