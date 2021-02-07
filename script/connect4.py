@@ -107,10 +107,10 @@ class Connect4:
             
         printer(self.get_board())
         if self.is_over() == -1:
-            print("There was a tie...")
+            print("There was a tie...\n")
         else:
             print("Congratulations Player " + str(self.is_over()) + ", you won! Thanks for playing!\n")
-        rematch = input("Rematch? (y/n)")
+        rematch = input("Rematch? (y/n) ")
         if rematch == 'y':
             self.board = [['O' for _ in range(7)] for _ in range(6)]
             self.player = random.randint(1,2)

@@ -75,8 +75,11 @@ def run():
                 if x >= 100 and x <= 300 and y>= 25 and y <= 75:
                     opponent = "Human"
                 
-                if x >= 500 and x <= 700 and y >= 25 and y <= 75:
+                elif x >= 500 and x <= 700 and y >= 25 and y <= 75:
                     opponent = "AI"
+                
+                else:
+                    continue
                 
                 pygame.draw.rect(screen, WHITE, [50, 0, 700, 100])
                 pygame.display.update()
